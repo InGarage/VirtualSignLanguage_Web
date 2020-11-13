@@ -3,8 +3,7 @@ var axios = require('axios');
 
 var router = express.Router();
 
-/// show sign up form
-router.get("/show",function(req,res){
+router.get("/",function(req,res){
     res.render("index");
 });
 
