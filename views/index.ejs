@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/WebGL_Build2.json", {onProgress: UnityProgress});
     </script>
@@ -23,9 +24,9 @@
       <div class="container-sm">
       <form action="/sendText" method="POST">
         <div class="input-group">
-          <input type="text" class="form-control" name="data" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2" required>
+          <input type="text" class="form-control" name="data" id="data" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2" required>
           <div class="input-group-append">
-            <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Button</button>
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
           </div>
         </div>
       </form>
@@ -44,4 +45,22 @@
     </div>
     </div>
   </body>
+  <script>
+  $(document).ready(function () {
+    // Listen to click event on the submit button
+    $('#button-addon2').click(function (e) {
+
+      e.preventDefault();
+
+      var data = $("#data").val();
+      console.log("data = ",data);
+      // $.get("https://www.google.com/", {
+      //   name: name,
+      //   email: email
+      // }).complete(function() {
+      //     console.log("Success");
+      //   });
+    });
+  }); 
+    </script>
 </html>
