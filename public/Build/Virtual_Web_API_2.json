@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Virsual",
+"productVersion": "0.1",
+"dataUrl": "Virtual_Web_API_2.data.unityweb",
+"wasmCodeUrl": "Virtual_Web_API_2.wasm.code.unityweb",
+"wasmFrameworkUrl": "Virtual_Web_API_2.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.14f1"
+}

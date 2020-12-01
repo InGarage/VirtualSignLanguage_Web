@@ -1,4 +1,5 @@
-.webgl-content {position: relative;margin: 0 auto;}
+.webgl-content * {border: 0; margin: 0; padding: 0}
+.webgl-content {position: relative;}
 
 .webgl-content .logo, .progress {position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
 .webgl-content .logo {background: url('progressLogo.Light.png') no-repeat center / contain; width: 154px; height: 130px;}
@@ -16,6 +17,7 @@
 .webgl-content .footer .title {margin-right: 10px; float: right;}
 .webgl-content .footer .fullscreen {background-image: url('fullscreen.png'); width: 38px; float: right;}
 
+
 #unityContainer{
     width: 100%;
 }
@@ -25,10 +27,6 @@
     padding: 32px;
     text-align: center;
     margin: 0 auto;
-}
-
-.input-container{
-    padding: 32px 28px;
 }
 
 

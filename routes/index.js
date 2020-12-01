@@ -7,6 +7,7 @@ router.get("/",function(req,res){
     res.render("index");
 });
 
+
 router.post("/sendText",function(req,res){
     console.log(req.body.data);
     // res.render("index");
